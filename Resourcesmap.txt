@@ -1,0 +1,3 @@
+EC2 jenkins machine
+docker installed on EC2 Machine 
+Docker Compose installed on Ec2 Machine

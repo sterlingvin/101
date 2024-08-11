@@ -3,10 +3,10 @@ pipeline {
 
     //pLEASE MODIFY THIS
     environment {
-        DOCKER_USERNAME = 'wiley19'
-        AWS_REGION = 'eu-west-2'  // Replace with your desired region
-        EC2_USER = 'ec2-user'     // Replace with your EC2 user
-        EC2_IP = '18.170.117.56'
+        DOCKER_USERNAME = 'vinsat'
+        AWS_REGION = 'ca-central-1'  // Replace with your desired region
+        EC2_USER = 'jenkins-server'     // Replace with your EC2 user
+        EC2_IP = '3.99.153.106'
         DOCKER_IMAGE_NAME = 'to-do-list'
         DOCKER_IMAGE_TAG = 'latest'
         SOURCE_IMAGE_NAME = 'node:14.15.0' // or the image you are pulling
@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: '4', url: 'https://github.com/willie191998/to-do-app-with-docker-jerkins-amplify.git', branch: 'master'
+                git credentialsId: '4', url: 'https://github.com/sterlingvin/101.git', branch: 'main'
                 echo "Cloning Repo..."
             }
         }
