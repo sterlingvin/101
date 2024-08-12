@@ -5,8 +5,8 @@ pipeline {
     environment {
         DOCKER_USERNAME = 'vinsat'
         AWS_REGION = 'ca-central-1'  // Replace with your desired region
-        EC2_USER = 'ubuntu'     // Replace with your EC2 user
-        EC2_IP = '35.183.110.123'
+        EC2_USER = 'ec2-user'     // Replace with your EC2 user
+        EC2_IP = '3.96.192.66'
         DOCKER_IMAGE_NAME = 'to-do-list'
         DOCKER_IMAGE_TAG = 'latest'
         SOURCE_IMAGE_NAME = 'node:14.15.0' // or the image you are pulling
